@@ -17,6 +17,7 @@ export default function MenuPage() {
           <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
             {flavors.map((flavor) => (
               <ProductCard
+                id={flavor.id}
                 key={flavor.id}
                 name={flavor.name}
                 category={flavor.category}

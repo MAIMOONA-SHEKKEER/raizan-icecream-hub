@@ -31,9 +31,9 @@ const CTASection = () => {
               src="https://www.google.com/maps/embed?pb=!4v1775926146439!6m8!1m7!1s1r5P5nFq24q8DXMPULRY0Q!2m2!1d12.42884263785744!2d75.07200143456504!3f304.2537634083521!4f1.3328190168839171!5f0.7820865974627469"
               width="1200"
               height="450"
-              allowFullScreen=""
+              allowFullScreen
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
