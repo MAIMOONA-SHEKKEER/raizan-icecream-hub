@@ -17,10 +17,12 @@ const HeroSection = () => {
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-8 text-zinc-600 sm:text-lg">
-              Raizan Ice Cream Hub is a modern startup creating a scalable
-              dessert brand. Under GLAZE, we launch multiple product types like
-              ice cream cups, candy, choco bars, syrups, donuts, family packs,
-              and more.
+              Raizan Ice Cream Hub is a modern startup building a scalable
+              dessert brand. Under GLAZE, we offer a wide portfolio of products
+              including ice cream cups, candy, choco bars, syrups, donuts, and
+              family packs. Designed for both everyday consumers and large-scale
+              demand, our products are perfectly suited for retail, events, and
+              bulk distribution.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -58,10 +60,6 @@ const HeroSection = () => {
                   className="mx-auto max-w-full rounded-2xl object-contain"
                   style={{ height: "auto" }}
                 />
-
-                <p className="mt-4 text-sm text-zinc-600">
-                  GLAZE — Premium Dessert Experience
-                </p>
               </div>
             </div>
 

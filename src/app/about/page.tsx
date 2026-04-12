@@ -9,7 +9,7 @@ export default function AboutPage() {
         <PageHero
           badge="About Raizan"
           title="The Startup Behind the GLAZE Dessert Brand"
-          description="Raizan Ice Cream Hub is building a modern frozen dessert company designed around brand identity, product variety, and scalable customer appeal."
+          description="Raizan Ice Cream Hub is a modern startup focused on building a scalable dessert ecosystem. Through our GLAZE brand, we deliver multiple product formats such as ice cream cups, candy, choco bars, syrups, donuts, and family packs. Our offerings are built for both direct consumption and high-volume distribution, supporting retail expansion, event supply, and bulk partnerships."
         />
       </MotionSection>
 
@@ -39,7 +39,7 @@ export default function AboutPage() {
                 </h3>
 
                 <ul className="mt-6 space-y-4 text-zinc-600">
-                  <li>• Raizan as the startup company</li>
+                  <li>• Raizan Icecream Hub as the startup company</li>
                   <li>• GLAZE as the umbrella dessert brand</li>
                   <li>• Multi-format product strategy</li>
                   <li>• Premium, modern, scalable identity</li>

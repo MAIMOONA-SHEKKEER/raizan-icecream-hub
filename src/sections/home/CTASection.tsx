@@ -16,7 +16,8 @@ const CTASection = () => {
 
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-zinc-300 md:text-base">
             Come and explore our dessert experience in person. Discover GLAZE
-            products, taste premium flavors, and connect with the Raizan brand.
+            products, taste premium flavors, and connect with the Raizan
+            Icecream brand.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
