@@ -16,9 +16,9 @@ export default function MenuPage() {
       </MotionSection>
 
       <MotionSection delay={0.1}>
-        <section className="py-20">
+        <section className="py-12 md:py-20">
           <Container>
-            <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
               {flavors.map((product) => (
                 <ProductCard
                   key={product.id}
