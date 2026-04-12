@@ -1,0 +1,8 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" rx="40" fill="#FFF7ED"/>
+  <rect x="250" y="280" width="300" height="180" rx="90" fill="#FDBA74"/>
+  <path d="M250 330L180 280V460L250 410V330Z" fill="#FED7AA"/>
+  <path d="M550 330L620 280V460L550 410V330Z" fill="#FED7AA"/>
+  <rect x="220" y="110" width="360" height="70" rx="35" fill="#EA580C"/>
+  <text x="400" y="155" text-anchor="middle" fill="white" font-size="34" font-family="Arial" font-weight="700">GLAZE CANDY</text>
+</svg>

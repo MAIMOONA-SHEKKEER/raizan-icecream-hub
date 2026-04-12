@@ -21,7 +21,11 @@ const CTASection = () => {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Button href="/menu">View Products</Button>
-            <Button href="/contact" variant="secondary" text-white>
+            <Button
+              href="/contact"
+              variant="secondary"
+              className="text-white border-white hover:text-pink-200"
+            >
               Contact Us
             </Button>
           </div>

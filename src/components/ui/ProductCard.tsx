@@ -1,36 +1,74 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 type ProductCardProps = {
-  id: number;
+  slug: string;
   name: string;
   category: string;
   description: string;
   price: string;
+  image: string;
+  flavorsAvailable?: string[];
 };
 
 const ProductCard = ({
-  id,
+  slug,
   name,
   category,
   description,
   price,
+  image,
+  flavorsAvailable = [],
 }: ProductCardProps) => {
   return (
-    <div className="group rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all hover:shadow-md">
-      <div className="mb-4 flex h-32 w-full items-center justify-center rounded-md bg-gradient-to-br from-pink-100 to-orange-100">
-        <div className="text-center">
-          <p className="text-sm font-medium text-gray-600">{category}</p>
-        </div>
+    <motion.div
+      whileHover={{ y: -8, scale: 1.02 }}
+      transition={{ duration: 0.25 }}
+      className="group overflow-hidden rounded-3xl border border-pink-100 bg-white shadow-sm transition duration-300 hover:shadow-xl"
+    >
+      <div className="relative h-56 w-full bg-pink-50">
+        <Image
+          src={image}
+          alt={name}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 25vw"
+        />
       </div>
 
-      <div>
-        <h3 className="font-semibold text-gray-900">{name}</h3>
-        <p className="mt-2 text-sm text-gray-600">{description}</p>
-        <div className="mt-4 flex items-center justify-between">
-          <span className="text-lg font-bold text-pink-600">{price}</span>
+      <div className="p-6">
+        <div className="mb-4 flex items-start justify-between gap-3">
+          <span className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-600">
+            {category}
+          </span>
+          <span className="text-base font-semibold text-pink-600">{price}</span>
         </div>
+
+        <h3 className="text-xl font-bold text-zinc-900">{name}</h3>
+        <p className="mt-3 text-sm leading-6 text-zinc-600">{description}</p>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          {flavorsAvailable.slice(0, 3).map((flavor) => (
+            <span
+              key={flavor}
+              className="rounded-full bg-pink-50 px-3 py-1 text-xs font-medium text-pink-700"
+            >
+              {flavor}
+            </span>
+          ))}
+        </div>
+
+        <Link
+          href={`/menu/${slug}`}
+          className="mt-6 inline-flex rounded-full bg-zinc-900 px-5 py-2 text-sm font-medium text-white transition hover:bg-pink-600"
+        >
+          View Full Details
+        </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

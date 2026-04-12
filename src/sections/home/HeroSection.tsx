@@ -13,7 +13,7 @@ const HeroSection = () => {
             </span>
 
             <h1 className="mt-6 text-4xl font-extrabold leading-tight tracking-tight text-zinc-900 sm:text-5xl md:text-6xl">
-              Built ByBuilds the Future of Frozen Desserts with GLAZE
+              Builds the Future of Frozen Desserts with GLAZE
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-8 text-zinc-600 sm:text-lg">
@@ -48,15 +48,20 @@ const HeroSection = () => {
 
           <div className="relative">
             <div className="mx-auto flex min-h-[320px] max-w-[500px] items-center justify-center rounded-[2rem] bg-gradient-to-br from-pink-200 via-rose-100 to-orange-100 p-8 text-center shadow-2xl sm:min-h-[420px]">
-              <div className="mt-4">
+              <div className="text-center">
                 <Image
                   src="/images/hero/glaze-hero.jpeg"
                   alt="GLAZE Ice Cream"
-                  width={400}
-                  height={400}
-                  className="mx-auto rounded-2xl object-contain"
+                  width={420}
+                  height={420}
                   priority
+                  className="mx-auto max-w-full rounded-2xl object-contain"
+                  style={{ height: "auto" }}
                 />
+
+                <p className="mt-4 text-sm text-zinc-600">
+                  GLAZE — Premium Dessert Experience
+                </p>
               </div>
             </div>
 

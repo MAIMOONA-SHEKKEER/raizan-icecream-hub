@@ -1,12 +1,19 @@
 import Link from "next/link";
+import { ReactNode } from "react";
 
 type ButtonProps = {
   href: string;
-  children: React.ReactNode;
+  children: ReactNode;
   variant?: "primary" | "secondary";
+  className?: string;
 };
 
-const Button = ({ href, children, variant = "primary" }: ButtonProps) => {
+const Button = ({
+  href,
+  children,
+  variant = "primary",
+  className = "",
+}: ButtonProps) => {
   const baseStyles =
     "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition";
 
@@ -17,7 +24,10 @@ const Button = ({ href, children, variant = "primary" }: ButtonProps) => {
   };
 
   return (
-    <Link href={href} className={`${baseStyles} ${variants[variant]}`}>
+    <Link
+      href={href}
+      className={`${baseStyles} ${variants[variant]} ${className}`}
+    >
       {children}
     </Link>
   );
