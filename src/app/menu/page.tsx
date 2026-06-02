@@ -26,7 +26,6 @@ export default function MenuPage() {
                   name={product.name}
                   category={product.category}
                   description={product.description}
-                  price={product.price}
                   image={product.image}
                   flavorsAvailable={product.flavorsAvailable}
                 />

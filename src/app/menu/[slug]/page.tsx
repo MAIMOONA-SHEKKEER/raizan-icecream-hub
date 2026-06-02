@@ -50,12 +50,9 @@ export default async function ProductDetailsPage({ params }: ProductPageProps) {
               {product.name}
             </h1>
 
-            <p className="mt-4 text-2xl font-bold text-pink-600">
-              {product.price}
-            </p>
 
             <p className="mt-6 text-base leading-8 text-zinc-600">
-              {product.fullDescription}
+              {product.description}
             </p>
 
             <div className="mt-8">

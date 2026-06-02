@@ -9,7 +9,6 @@ type ProductCardProps = {
   name: string;
   category: string;
   description: string;
-  price: string;
   image: string;
   flavorsAvailable?: string[];
 };
@@ -19,7 +18,6 @@ const ProductCard = ({
   name,
   category,
   description,
-  price,
   image,
   flavorsAvailable = [],
 }: ProductCardProps) => {
@@ -44,9 +42,7 @@ const ProductCard = ({
           <span className="rounded-full bg-zinc-100 px-3 py-1 text-[11px] font-medium text-zinc-600 sm:text-xs">
             {category}
           </span>
-          <span className="text-sm font-semibold text-pink-600 sm:text-base">
-            {price}
-          </span>
+         
         </div>
 
         <h3 className="text-lg font-bold text-zinc-900 sm:text-xl">{name}</h3>
